@@ -1,0 +1,135 @@
+@media screen and (max-width: 420px) {
+  .main {
+    width:100%;
+    display: flex;
+    flex-direction: row ;
+  }
+  .li:first-child{
+      width: 100%;
+      margin: 0;
+  }
+  #grid-flex .grid-item:nth-child(2) {
+      clear: center;
+      float: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    width:100%;
+    display: flex;
+    flex-direction: left;
+  }
+ 
+  #grid-flex .grid-item:nth-child(2) {
+      width: 50%;
+      margin: 10%;
+  }
+  #grid-flex .grid-item:nth-child(3){
+      clear:left;
+      float: left;
+  }
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  }
+
+head{
+  font-style: inherit
+  }
+
+body {
+  background-color: rgb(46, 150, 168);
+  margin: 0;
+  padding: 0;
+  }
+
+  .section{
+    float: center;
+    clear: center;
+    z-index: 99;  
+}
+
+p {
+  padding: 1rem;
+  border-top: 15px solid ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  padding: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6rem;
+  color: rgb(185, 19, 19);
+  text-align: left;
+}
+
+h2 {
+  padding: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: rgb(255, 0, 0);
+  text-align: center
+}
+
+h3 {
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #3D6A7D;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+#grid-floats {
+  display: grid;
+  clear: left;
+  background-color: #3D6A7D;
+  min-width: 35rem;
+  float: left;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  gap:10px;
+  justify-items: stretch;
+  padding: 2% 2% 4%;
+}
+
+#grid-flex {
+  display: grid;
+  float: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: stretch;
+  padding: 2% 2% 4%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  gap: 10px;
+  background-color: #3D6A7D;
+  overflow: hidden;
+}
+
+.grid-item {
+  padding: 1rem;
+  border-top: 5px solid #FF9900;
+  border-bottom: 5px solid #FF9900;
+  background-color: white;
+  margin: 2.666%;
+}
+
+.grid-item img {
+  display: center;
+  clear: both;
+  max-width: 50%;
+}
+.XMLID_5_ {
+  background-color: aqua;
+}
